@@ -417,7 +417,7 @@ ul { list-style: none; }
 .hero-content {
   position: relative;
   z-index: 1;
-  padding-top: var(--space-20);
+  padding-top: var(--space-12);
   padding-bottom: var(--space-20);
 }
 
@@ -445,11 +445,13 @@ ul { list-style: none; }
 }
 
 .hero-name {
-  font-size: clamp(3.5rem, 9vw, 7.5rem);
+  font-size: clamp(4.5rem, 10.8vw, 8.4rem);
   font-weight: 800;
-  letter-spacing: -0.05em;
-  line-height: 0.95;
-  margin-bottom: var(--space-6);
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+  margin-bottom: var(--space-8);
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 .name-dim {

@@ -73,7 +73,8 @@
 
   /* Hero */
   .hero-name {
-    font-size: clamp(3rem, 12vw, 5rem);
+    font-size: clamp(3.5rem, 11vw, 6rem);
+    letter-spacing: -0.055em;
   }
 
   .hero-title {
@@ -145,7 +146,10 @@
 
   .container { padding: 0 var(--space-5); }
 
-  .hero-name { letter-spacing: -0.04em; }
+  .hero-name {
+    font-size: clamp(2.7rem, 12.5vw, 3.5rem);
+    letter-spacing: -0.045em;
+  }
 
   .hero-actions {
     flex-direction: column;
@@ -186,7 +190,7 @@
 @media (min-width: 1400px) {
   :root { --container: 1320px; }
 
-  .hero-name { font-size: 8.5rem; }
+  .hero-name { font-size: 9rem; }
 
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);

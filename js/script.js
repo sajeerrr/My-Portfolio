@@ -9,16 +9,19 @@
   const loader = document.getElementById('loader');
   if (!loader) return;
 
+  function hideLoader() {
+    loader.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
   // Hide loader after animations complete
   window.addEventListener('load', () => {
-    setTimeout(() => {
-      loader.classList.add('hidden');
-      document.body.style.overflow = '';
-    }, 1500);
+    setTimeout(hideLoader, 1500);
   });
 
   // Prevent scroll while loading
   document.body.style.overflow = 'hidden';
+  setTimeout(hideLoader, 2500);
 })();
 
 /* ==================== SCROLL PROGRESS ==================== */
