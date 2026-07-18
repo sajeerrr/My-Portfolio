@@ -1,0 +1,201 @@
+/* =====================================================
+   ANIMATIONS.CSS — Keyframes & Animation Classes
+   ===================================================== */
+
+/* ==================== KEYFRAMES ==================== */
+
+@keyframes loader-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes loader-fill {
+  0%   { width: 0%; }
+  60%  { width: 70%; }
+  100% { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+@keyframes badge-pulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(74, 222, 128, 0.6); }
+  50%       { box-shadow: 0 0 16px rgba(74, 222, 128, 0.9); }
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(8px); }
+}
+
+@keyframes fade-up-in {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-left-in {
+  from {
+    opacity: 0;
+    transform: translateX(-28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-right-in {
+  from {
+    opacity: 0;
+    transform: translateX(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ==================== ENTRANCE ANIMATION CLASSES ==================== */
+/* Elements start hidden — JS Intersection Observer triggers them */
+
+.fade-up,
+.fade-left,
+.fade-right,
+.scale-in {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.fade-up    { transform: translateY(28px); }
+.fade-left  { transform: translateX(-28px); }
+.fade-right { transform: translateX(28px); }
+.scale-in   { transform: scale(0.92); }
+
+/* Animated state */
+.fade-up.animated {
+  animation: fade-up-in 0.65s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.fade-left.animated {
+  animation: fade-left-in 0.65s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.fade-right.animated {
+  animation: fade-right-in 0.65s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.scale-in.animated {
+  animation: scale-in 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ==================== DELAY MODIFIERS ==================== */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+
+/* ==================== HOVER MICRO-INTERACTIONS ==================== */
+
+/* Magnetic button shimmer overlay */
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+  background-size: 200% 100%;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.btn:hover::after {
+  opacity: 1;
+  animation: shimmer 0.7s ease-out;
+}
+
+/* Card animated border on hover (via pseudo-element) */
+.project-card-featured::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, transparent 40%, rgba(255,255,255,0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.project-card-featured {
+  position: relative;
+}
+
+.project-card-featured:hover::before {
+  opacity: 1;
+}
+
+/* Glow on skill cards */
+.skill-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255,255,255,0.04) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.skill-card {
+  position: relative;
+}
+
+.skill-card:hover::after {
+  opacity: 1;
+}
+
+/* ==================== REDUCED MOTION ==================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .fade-up,
+  .fade-left,
+  .fade-right,
+  .scale-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  html { scroll-behavior: auto; }
+}

@@ -1,0 +1,217 @@
+/* =====================================================
+   RESPONSIVE.CSS — Breakpoint Overrides
+   Breakpoints: 1024px (tablet), 768px (mobile-lg), 480px (mobile-sm)
+   ===================================================== */
+
+/* ==================== TABLET (≤1024px) ==================== */
+@media (max-width: 1024px) {
+
+  :root {
+    --space-32: 96px;
+    --space-24: 72px;
+  }
+
+  .nav-links { gap: 0; }
+
+  .nav-link {
+    padding: var(--space-2) 10px;
+    font-size: 0.8125rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .about-avatar-col {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-8);
+  }
+
+  .about-social {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  }
+
+  .projects-featured {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .footer-center { order: 3; }
+  .footer-right { justify-content: flex-start; }
+}
+
+/* ==================== MOBILE-LG (≤768px) ==================== */
+@media (max-width: 768px) {
+
+  :root {
+    --nav-height: 60px;
+    --space-32: 80px;
+    --space-20: 60px;
+    --space-16: 48px;
+  }
+
+  /* Navigation */
+  .nav-links { display: none; }
+  .btn-ghost.btn-sm:not(.hamburger) { display: none; }
+
+  .hamburger { display: flex; }
+
+  .mobile-menu { display: block; }
+
+  /* Hero */
+  .hero-name {
+    font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .hero-title {
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .hero-stats {
+    gap: var(--space-5);
+  }
+
+  .stat-num { font-size: 1.5rem; }
+
+  /* About */
+  .about-avatar-col {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .avatar-card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .avatar-initials { font-size: 1.75rem; }
+
+  .about-social {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Projects */
+  .filter-bar { gap: var(--space-2); }
+
+  .filter-btn { padding: var(--space-2) var(--space-4); font-size: 0.8125rem; }
+
+  .projects-featured { grid-template-columns: 1fr; }
+
+  .projects-other { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact-grid { grid-template-columns: 1fr; }
+
+  /* Timeline */
+  .timeline { padding-left: var(--space-5); }
+
+  /* Certs */
+  .cert-card { flex-wrap: wrap; }
+
+  /* Footer */
+  .footer-inner { text-align: center; }
+  .footer-right { justify-content: center; }
+  .footer-left { align-items: center; }
+
+  /* Back to top */
+  .back-to-top {
+    bottom: var(--space-5);
+    right: var(--space-5);
+  }
+}
+
+/* ==================== MOBILE-SM (≤480px) ==================== */
+@media (max-width: 480px) {
+
+  .container { padding: 0 var(--space-5); }
+
+  .hero-name { letter-spacing: -0.04em; }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    gap: var(--space-4);
+  }
+
+  .stat-divider { height: 32px; }
+
+  .section-title { letter-spacing: -0.03em; }
+
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skill-bar-item { flex-wrap: wrap; }
+  .bar-track { width: 100%; }
+
+  .cert-card { gap: var(--space-3); }
+
+  .cert-badge { align-self: flex-start; }
+}
+
+/* ==================== LARGE DESKTOP (≥1400px) ==================== */
+@media (min-width: 1400px) {
+  :root { --container: 1320px; }
+
+  .hero-name { font-size: 8.5rem; }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ==================== PRINT ==================== */
+@media print {
+  #loader,
+  #navbar,
+  #scroll-progress,
+  .back-to-top,
+  .scroll-hint,
+  .hero-glow,
+  .hero-grid {
+    display: none !important;
+  }
+
+  body { background: #fff; color: #000; }
+
+  .section { padding: 40px 0; }
+
+  .card, .skill-card, .project-card-featured,
+  .cert-card, .contact-card, .timeline-card {
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+}

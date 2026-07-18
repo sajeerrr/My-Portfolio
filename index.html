@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sajeer F M – AI & Backend Developer specializing in Python, Django, FastAPI, and LangChain. Building scalable AI-powered solutions." />
+  <meta name="keywords" content="Sajeer FM, AI Developer, Backend Developer, Python, Django, FastAPI, LangChain, Portfolio" />
+  <meta name="author" content="Sajeer F M" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sajeer F M – AI & Backend Developer" />
+  <meta property="og:description" content="Transforming ideas into AI-powered solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sajeerrr.github.io" />
+
+  <title>Sajeer F M — AI & Backend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ==================== LOADING SCREEN ==================== -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">SFM</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ==================== SCROLL PROGRESS ==================== -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#home" class="nav-logo" aria-label="Home">SFM</a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="assets/resume.pdf" download class="btn btn-ghost btn-sm" aria-label="Download Resume">Resume ↓</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+      <ul role="list">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#education" class="mobile-link">Education</a></li>
+        <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li><a href="assets/resume.pdf" download class="mobile-link">Download Resume</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="hero" aria-label="Hero">
+      <!-- Mouse glow -->
+      <div class="hero-glow" id="hero-glow" aria-hidden="true"></div>
+      <!-- Grid pattern -->
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <div class="hero-badge fade-up">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-name fade-up delay-1">Sajeer<br/><span class="name-dim">F M</span></h1>
+
+        <div class="hero-title fade-up delay-2">
+          <span class="title-static">I build</span>
+          <span class="title-typed" id="typed-text" aria-live="polite"></span>
+          <span class="cursor" aria-hidden="true">|</span>
+        </div>
+
+        <p class="hero-tagline fade-up delay-3">
+          Transforming ideas into AI-powered solutions.
+        </p>
+
+        <div class="hero-actions fade-up delay-4">
+          <a href="assets/resume.pdf" download class="btn btn-primary magnetic">
+            Download Resume
+          </a>
+          <a href="#projects" class="btn btn-secondary magnetic">
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-ghost magnetic">
+            Contact Me
+          </a>
+        </div>
+
+        <div class="hero-stats fade-up delay-5">
+          <div class="stat">
+            <span class="stat-num" data-count="10">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="3">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Years Learning</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="15">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint fade-up delay-5" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="section" aria-label="About me">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Who I am</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-avatar-col fade-left">
+            <div class="avatar-card">
+              <div class="avatar-initials">SFM</div>
+              <div class="avatar-glow" aria-hidden="true"></div>
+            </div>
+            <div class="about-social">
+              <a href="https://github.com/sajeerrr" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="https://linkedin.com/in/sajeerfm" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://leetcode.com/u/sajeerrr/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LeetCode">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+                LeetCode
+              </a>
+            </div>
+          </div>
+
+          <div class="about-text-col fade-right">
+            <p class="about-lead">
+              I'm an <strong>MCA student</strong> with a deep passion for AI, Backend Development, and Machine Learning — building systems where intelligence meets infrastructure.
+            </p>
+            <p class="about-body">
+              My academic journey has given me a strong foundation in data structures, algorithms, software engineering, and database systems. I enjoy designing efficient, maintainable software that addresses real-world challenges while continuously exploring emerging technologies.
+            </p>
+            <p class="about-body">
+              I have hands-on experience developing projects with <strong>Django</strong>, <strong>FastAPI</strong>, <strong>LangChain</strong>, <strong>PostgreSQL</strong>, and modern AI frameworks — combining intelligent automation with robust backend architectures.
+            </p>
+            <p class="about-body">
+              I'm committed to continuous learning and enjoy collaborating on innovative projects that create meaningful impact through technology.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">🎓</span>
+                <span>MCA @ TKM College of Engineering</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">📍</span>
+                <span>Kanyakumari, Tamil Nadu, India</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">⚡</span>
+                <span>Open to AI & Backend roles</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="section section-alt" aria-label="Skills">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">What I work with</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Programming Languages -->
+          <div class="skill-card fade-up">
+            <div class="skill-card-header">
+              <div class="skill-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3 class="skill-category">Programming Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span class="bar-label">Python</span>
+                <div class="bar-track"><div class="bar-fill" data-width="92"></div></div>
+                <span class="bar-pct">92%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="bar-label">JavaScript</span>
+                <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+                <span class="bar-pct">75%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="bar-label">SQL</span>
+                <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+                <span class="bar-pct">80%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frameworks -->
+          <div class="skill-card fade-up delay-1">
+            <div class="skill-card-header">
+              <div class="skill-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              </div>
+              <h3 class="skill-category">Frameworks & Libraries</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Streamlit</span>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">SQLAlchemy</span>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span class="bar-label">Django</span>
+                <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+                <span class="bar-pct">88%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="bar-label">FastAPI</span>
+                <div class="bar-track"><div class="bar-fill" data-width="82"></div></div>
+                <span class="bar-pct">82%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="bar-label">LangChain</span>
+                <div class="bar-track"><div class="bar-fill" data-width="78"></div></div>
+                <span class="bar-pct">78%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & ML -->
+          <div class="skill-card fade-up delay-2">
+            <div class="skill-card-header">
+              <div class="skill-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              </div>
+              <h3 class="skill-category">AI & Machine Learning</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag-accent">RAG</span>
+              <span class="skill-tag skill-tag-accent">LLMs</span>
+              <span class="skill-tag">Sentence Transformers</span>
+              <span class="skill-tag">Vector Embeddings</span>
+              <span class="skill-tag">Prompt Engineering</span>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span class="bar-label">RAG Systems</span>
+                <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+                <span class="bar-pct">85%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="bar-label">Prompt Engineering</span>
+                <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+                <span class="bar-pct">80%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="bar-label">Vector Embeddings</span>
+                <div class="bar-track"><div class="bar-fill" data-width="78"></div></div>
+                <span class="bar-pct">78%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-card fade-up">
+            <div class="skill-card-header">
+              <div class="skill-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <h3 class="skill-category">Databases</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">SQLite</span>
+              <span class="skill-tag">ChromaDB</span>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span class="bar-label">PostgreSQL</span>
+                <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+                <span class="bar-pct">85%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="bar-label">ChromaDB</span>
+                <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+                <span class="bar-pct">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer Tools -->
+          <div class="skill-card fade-up delay-1">
+            <div class="skill-card-header">
+              <div class="skill-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <h3 class="skill-category">Developer Tools</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Postman</span>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span class="bar-label">Git & GitHub</span>
+                <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+                <span class="bar-pct">90%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="bar-label">Docker</span>
+                <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+                <span class="bar-pct">70%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="section" aria-label="Projects">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">What I've built</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+
+        <!-- Filter -->
+        <div class="filter-bar fade-up" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ai">AI</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+        </div>
+
+        <!-- Featured -->
+        <h3 class="projects-label fade-up">Featured</h3>
+        <div class="projects-featured">
+
+          <!-- Project 1 -->
+          <article class="project-card project-card-featured fade-up" data-category="backend web" aria-label="Exam Seat Management System project">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder project-img-1" aria-hidden="true">
+                <div class="project-img-overlay"></div>
+                <span class="project-img-label">Seat Management</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-badge">Backend</span>
+                <span class="project-badge">Web</span>
+              </div>
+              <h3 class="project-title">Exam Seat Management System</h3>
+              <p class="project-desc">A full-featured web application that automates exam hall seating allocation for academic institutions. Handles student enrollment, dynamic hall assignment, conflict detection, and generates printable seating charts with PDF export.</p>
+              <div class="project-stack">
+                <span class="stack-tag">Django</span>
+                <span class="stack-tag">PostgreSQL</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">HTML/CSS</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/sajeerrr" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  GitHub
+                </a>
+                <a href="#" class="btn btn-primary btn-sm">Live Demo →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card project-card-featured fade-up delay-1" data-category="ai backend" aria-label="StudyMate AI Learning Assistant project">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder project-img-2" aria-hidden="true">
+                <div class="project-img-overlay"></div>
+                <span class="project-img-label">AI Learning</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-badge project-badge-ai">AI</span>
+                <span class="project-badge">Backend</span>
+              </div>
+              <h3 class="project-title">StudyMate – AI Learning Assistant</h3>
+              <p class="project-desc">An intelligent study companion powered by RAG architecture. Students upload documents and receive context-aware explanations, quizzes, and summaries. Built with LangChain and ChromaDB for semantic retrieval over large study materials.</p>
+              <div class="project-stack">
+                <span class="stack-tag">FastAPI</span>
+                <span class="stack-tag">LangChain</span>
+                <span class="stack-tag">ChromaDB</span>
+                <span class="stack-tag">Streamlit</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/sajeerrr" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  GitHub
+                </a>
+                <a href="#" class="btn btn-primary btn-sm">Live Demo →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card project-card-featured fade-up delay-2" data-category="ai backend" aria-label="HireX AI Worker Verification project">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder project-img-3" aria-hidden="true">
+                <div class="project-img-overlay"></div>
+                <span class="project-img-label">AI Verification</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-badge project-badge-ai">AI</span>
+                <span class="project-badge">Backend</span>
+              </div>
+              <h3 class="project-title">HireX – AI Worker Verification</h3>
+              <p class="project-desc">An AI-powered platform for verifying skilled workers and matching them with employers. Uses LLM-based document analysis for credential validation, skill assessment, and intelligent job matching with fraud detection capabilities.</p>
+              <div class="project-stack">
+                <span class="stack-tag">Django</span>
+                <span class="stack-tag">LangChain</span>
+                <span class="stack-tag">PostgreSQL</span>
+                <span class="stack-tag">AWS</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/sajeerrr" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  GitHub
+                </a>
+                <a href="#" class="btn btn-primary btn-sm">Live Demo →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Other Projects -->
+        <h3 class="projects-label fade-up" style="margin-top: var(--space-12);">Other Projects</h3>
+        <div class="projects-other">
+
+          <article class="project-card-sm fade-up" data-category="web backend" aria-label="ComplaintEase project">
+            <div class="project-card-sm-top">
+              <span class="project-num" aria-hidden="true">01</span>
+              <div class="project-links-sm">
+                <a href="https://github.com/sajeerrr" target="_blank" rel="noopener noreferrer" aria-label="GitHub for ComplaintEase">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" aria-label="Live demo for ComplaintEase">↗</a>
+              </div>
+            </div>
+            <h4 class="project-card-sm-title">ComplaintEase</h4>
+            <p class="project-card-sm-desc">A citizen-facing complaint management portal that routes issues to the correct department, tracks resolution status in real time, and notifies users at every step via email and SMS.</p>
+            <div class="project-stack-sm">
+              <span>Django</span><span>PostgreSQL</span><span>REST API</span>
+            </div>
+          </article>
+
+          <article class="project-card-sm fade-up delay-1" data-category="web" aria-label="SuperShare project">
+            <div class="project-card-sm-top">
+              <span class="project-num" aria-hidden="true">02</span>
+              <div class="project-links-sm">
+                <a href="https://github.com/sajeerrr" target="_blank" rel="noopener noreferrer" aria-label="GitHub for SuperShare">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" aria-label="Live demo for SuperShare">↗</a>
+              </div>
+            </div>
+            <h4 class="project-card-sm-title">SuperShare</h4>
+            <p class="project-card-sm-desc">A lightweight peer-to-peer file sharing web app that generates secure, time-limited download links. Supports drag-and-drop uploads, progress tracking, and automatic file expiry with no account required.</p>
+            <div class="project-stack-sm">
+              <span>FastAPI</span><span>Python</span><span>SQLite</span>
+            </div>
+          </article>
+
+          <article class="project-card-sm fade-up delay-2" data-category="ai web" aria-label="Stroopy project">
+            <div class="project-card-sm-top">
+              <span class="project-num" aria-hidden="true">03</span>
+              <div class="project-links-sm">
+                <a href="https://github.com/sajeerrr" target="_blank" rel="noopener noreferrer" aria-label="GitHub for Stroopy">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" aria-label="Live demo for Stroopy">↗</a>
+              </div>
+            </div>
+            <h4 class="project-card-sm-title">Stroopy</h4>
+            <p class="project-card-sm-desc">A cognitive psychology web tool implementing the Stroop effect test to measure cognitive flexibility and reaction time. Generates session analytics, plots response distributions, and exports results as reports.</p>
+            <div class="project-stack-sm">
+              <span>Streamlit</span><span>Python</span><span>Pandas</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section id="education" class="section section-alt" aria-label="Education">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Academic background</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item fade-left">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">Aug 2025 – Present</div>
+              <h3 class="timeline-degree">Master of Computer Applications</h3>
+              <p class="timeline-school">TKM College of Engineering</p>
+              <p class="timeline-location">Kollam, Kerala</p>
+              <p class="timeline-desc">Pursuing advanced coursework in Artificial Intelligence, Distributed Systems, and Software Architecture. Active in research and academic projects bridging AI with practical backend engineering.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-right">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">Aug 2021 – May 2024</div>
+              <h3 class="timeline-degree">Bachelor of Science in Computer Science</h3>
+              <p class="timeline-school">University of Kerala</p>
+              <p class="timeline-location">Thiruvananthapuram, Kerala</p>
+              <p class="timeline-desc">Built a strong foundation in data structures, algorithms, database management, operating systems, and software engineering principles. Graduated with distinction in final semester projects.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS ==================== -->
+    <section id="certifications" class="section" aria-label="Certifications">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+
+        <div class="certs-grid">
+
+          <div class="cert-card fade-up">
+            <div class="cert-icon" aria-hidden="true">🐍</div>
+            <div class="cert-info">
+              <h3 class="cert-title">The Complete Python Developer</h3>
+              <p class="cert-issuer">Udemy</p>
+            </div>
+            <div class="cert-badge">Verified</div>
+          </div>
+
+          <div class="cert-card fade-up delay-1">
+            <div class="cert-icon" aria-hidden="true">📊</div>
+            <div class="cert-info">
+              <h3 class="cert-title">Introduction to Data Science</h3>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+            </div>
+            <div class="cert-badge">Verified</div>
+          </div>
+
+          <div class="cert-card fade-up delay-2">
+            <div class="cert-icon" aria-hidden="true">🌐</div>
+            <div class="cert-info">
+              <h3 class="cert-title">Legacy Responsive Web Design</h3>
+              <p class="cert-issuer">freeCodeCamp</p>
+            </div>
+            <div class="cert-badge">Verified</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section section-alt" aria-label="Contact">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Let's connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">I'm currently open to new opportunities. Whether it's a project, a role, or just a chat — feel free to reach out.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <a href="mailto:sajeerfm93@gmail.com" class="contact-card fade-up" aria-label="Send email to sajeerfm93@gmail.com">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">sajeerfm93@gmail.com</span>
+            </div>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a href="tel:+916238610619" class="contact-card fade-up delay-1" aria-label="Call +91 6238610619">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.88-.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 6238610619</span>
+            </div>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <div class="contact-card contact-card-location fade-up delay-2" aria-label="Location: Kanyakumari, Tamil Nadu, India">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Kanyakumari, Tamil Nadu</span>
+            </div>
+          </div>
+
+          <a href="https://github.com/sajeerrr" target="_blank" rel="noopener noreferrer" class="contact-card fade-up delay-3" aria-label="GitHub profile">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/sajeerrr</span>
+            </div>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a href="https://linkedin.com/in/sajeerfm" target="_blank" rel="noopener noreferrer" class="contact-card fade-up delay-1" aria-label="LinkedIn profile">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/sajeerfm</span>
+            </div>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a href="https://leetcode.com/u/sajeerrr/" target="_blank" rel="noopener noreferrer" class="contact-card fade-up delay-2" aria-label="LeetCode profile">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-label">LeetCode</span>
+              <span class="contact-value">leetcode.com/u/sajeerrr</span>
+            </div>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">SFM</span>
+        <p class="footer-copy">© 2025 Sajeer F M. All rights reserved.</p>
+      </div>
+      <div class="footer-center">
+        <p class="footer-built">Built with HTML · CSS · JavaScript</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-social">
+          <a href="https://github.com/sajeerrr" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/sajeerfm" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://leetcode.com/u/sajeerrr/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/animations.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
